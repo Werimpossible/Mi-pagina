@@ -8,6 +8,8 @@
 /* Estilos generales de la página */
 html {
     font-family: 'Nunito', sans-serif;
+    color: white;
+    text-align: center;
 }
 
 h1 {
@@ -15,12 +17,6 @@ h1 {
     color: white;
     text-shadow: 4px 1px 4px #D70E7F;
     font-family: 'Encode Sans Expanded', sans-serif;
-    font-size: 2rem;
-}
-
-p {
-    color: white;
-    text-align: center;
 }
 
 img {
@@ -65,10 +61,6 @@ img {
 @media only screen and (max-width: 600px) {
     [class*="col-"] {
         width: 100%;
-    }
-    
-    p{
-        text-justify: auto;
     }
     #header-grande{
         display: none;
