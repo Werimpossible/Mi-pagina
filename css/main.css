@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    background-color: #1c1a2f;
+}
+
+/* Estilos generales de la página */
+html {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 4px 1px 4px #D70E7F;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 2rem;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+img {
+    width:100%;
+    height: auto;
+}
+
+#header-chico {
+    display: none;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+.footer {
+    text-align: center;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* Clase para aumento a tamaño desktop */
+@media only screen and (max-width: 600px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+    
+    p{
+        text-justify: auto;
+    }
+    #header-grande{
+        display: none;
+    }
+    #header-chico{
+        display: block;
+    }
+}
